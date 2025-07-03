@@ -116,6 +116,7 @@ export default function JankenGame() {
   if (status === "playing") {
     return (
       <div className="p-4 space-y-4">
+        <p>ルームID: {roomId}</p> 
         <h2>手を選んでください</h2>
         <button onClick={() => chooseHand("rock")} className="p-2 bg-gray-300 rounded">グー</button>
         <button onClick={() => chooseHand("scissors")} className="p-2 bg-gray-300 rounded">チョキ</button>
